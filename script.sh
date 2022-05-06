@@ -19,3 +19,13 @@ docker container create --name command haxnel/command
 docker container start command
 docker container logs command
 docker container ls -a | grep command
+
+#LABEL instruction
+docker build -t haxnel/label label
+
+#ADD instruction
+docker build -t haxnel/add add
+docker container create --name add haxnel/add
+docker container start add
+docker container logs add
+docker container ls -a | grep add
